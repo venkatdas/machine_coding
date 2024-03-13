@@ -1,0 +1,48 @@
+body {
+  font-family: sans-serif;
+}
+
+/* .carousel-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+} */
+
+button {
+  background-color: #ddd;
+  border: none;
+  padding: 10px;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.carousel-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  padding: 20px;
+  gap: 20px;
+  background-color: #f5f5f5; /* Light grey background */
+}
+
+.carousel-item {
+  flex: none; /* Prevent flex items from growing or shrinking */
+  width: 300px; /* Adjust based on your preference */
+  text-align: center;
+  border-radius: 10px; /* Optional: Adds rounded corners to your carousel items */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Adds a subtle shadow for depth */
+  background-color: #ffffff; /* White background for each item */
+  overflow: hidden; /* Ensures the content fits within the borders */
+}
+
+.carousel-item img {
+  width: 100%; /* Makes the image fill the container width */
+  height: auto; /* Adjusts the height to maintain the aspect ratio */
+  border-bottom: 1px solid #eee; /* Adds a subtle line between the image and the caption */
+}
+
+.carousel-item p {
+  margin: 10px 0; /* Adds some space around the caption */
+}
