@@ -1,0 +1,69 @@
+* {
+  font-family: sans-serif;
+}
+
+.container {
+  background-color: darkgray;
+  padding: 20px;
+}
+
+.header {
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  font-size: 20px;
+  font-weight: 700;
+  padding-bottom: 20px;
+}
+
+button {
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  background-color: #2a9b8b;
+  color: white;
+  text-transform: uppercase;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.copyBtn {
+  height: 30px;
+}
+
+.charlength {
+  color: white;
+  padding-bottom: 24px;
+  display: flex;
+  font-size: 20px;
+  font-weight: 700;
+  flex-direction: column;
+}
+
+.charlength span {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 24px;
+}
+
+
+.checkboxes{
+  display: grid;
+  grid-template-columns: auto auto;
+  font-size: 16px;
+  font-weight: 700;
+  color: white;
+}
+
+.checkboxes div{
+  display: flex;
+  gap:5px;
+  padding-bottom: 25px;
+}
+
+.generateBtn{
+  width: 100%;
+  font-size: 20px;
+  padding: 20px;
+}

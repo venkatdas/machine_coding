@@ -1,0 +1,67 @@
+/* container.css */
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.header,
+.footer {
+  flex: 0 1 auto; /* Don't grow, but can shrink and based on content */
+  background: #4a90e2; /* Different color for header and footer */
+  padding: 20px; /* Increased padding for larger size */
+  color: #fff; /* White text color for better contrast */
+  text-align: center; /* Center-align the text for smaller screens */
+}
+
+.main {
+  flex: 1; /* Grow to fill the container */
+  display: flex;
+  overflow: hidden; /* Prevents overflow caused by larger header/footer */
+}
+
+.sidebar {
+  flex: 0 1 12rem; /* Don't grow, but can shrink and has a base width of 12rem */
+  background: #50e3c2; /* Different color for sidebars */
+  color: #333; /* Dark text color for better readability */
+  padding: 10px; /* Added padding for content */
+}
+
+.content {
+  flex: 1; /* Grow to fill the space */
+  background: #f8e71c; /* Different color for main content */
+  color: #333; /* Dark text color for better readability */
+  padding: 10px; /* Padding for content spacing */
+}
+
+/* If you want the left and right sidebars to have different colors */
+.sidebar.left {
+  background: #7ed321; /* Different color for left sidebar */
+}
+
+.sidebar.right {
+  background: #bd10e0; /* Different color for right sidebar */
+}
+
+@media (max-width: 768px) {
+  .main {
+    flex-direction: column; /* Stack vertically on smaller screens */
+  }
+
+  .sidebar {
+    flex: 0 1 auto; /* Adjust size for a vertical stack */
+    width: 100%; /* Full width sidebars */
+  }
+}
+
+@media (max-width: 480px) {
+  .header,
+  .footer {
+    padding: 15px; /* Slightly reduce padding for very small screens */
+  }
+
+  .sidebar,
+  .content {
+    padding: 5px; /* Reduce padding for smaller screens */
+  }
+}
