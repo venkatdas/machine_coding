@@ -1,0 +1,39 @@
+/* ProgressBar.css */
+
+.progress-bar {
+  width: 100%;
+  background-color: #e0e0e0;
+  border-radius: 8px;
+  overflow: hidden;
+  position: relative;
+  color: white;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+}
+
+.progress-bar-fill {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20px;
+  background-color: #76c880;
+  transition: width 0.3s ease-in-out;
+  border-radius: 8px;
+  color: black; /* Ensure text is visible on the progress fill */
+}
+
+.progress-text {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  z-index: 1;
+  color: black; /* Adjust as needed based on your background */
+}
+
+.controls button {
+  margin: 10px;
+  padding: 10px;
+  font-size: 16px;
+  cursor: pointer;
+}
