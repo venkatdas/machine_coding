@@ -1,0 +1,28 @@
+.img-box{
+  display: flex;
+  flex-direction: column;
+
+}
+.alldata{
+  gap: 10px;
+}
+.img-view{
+  width: 400px;
+  height: 300px;
+  margin: 10px;
+
+}
+
+button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+button:not(:disabled) {
+  cursor: pointer;
+}
+
+button:not(:disabled):hover {
+  background-color: #007bff;
+  color: white;
+}
