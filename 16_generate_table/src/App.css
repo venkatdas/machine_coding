@@ -1,0 +1,28 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.form-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.form-row {
+  display: flex;
+  align-items: center;   /* vertical alignment */
+  gap: 10px;             /* space between label and input */
+  margin-bottom: 10px;   /* spacing between rows */
+}
+
+.form-row label{
+  width: 100px;
+  text-align: right;
+  margin-right: 10px;
+}
+
+.btn{
+  margin-top: 10px;
+  margin-left: 30px;
+}
